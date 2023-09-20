@@ -13,20 +13,35 @@
             "homepage": "https://github.com/symfony-cmf/ContentBundle/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:lrkdev/symfony-cmf-core-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:lrkdev/symfony-cmf-menu-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:lrkdev/symfony-cmf-testing.git"
+        }
+    ],
     "require": {
-        "php": "^7.1",
-        "symfony/framework-bundle": "^2.8 || ^3.3 || ^4.0",
-        "symfony/templating": "^2.8 || ^3.3 || ^4.0",
-        "symfony/twig-bundle": "^2.8 || ^3.3 || ^4.0",
-        "symfony/validator": "^2.8 || ^3.3 || ^4.0",
-        "symfony-cmf/core-bundle": "^2.1",
-        "symfony-cmf/menu-bundle": "^2.1",
-        "symfony-cmf/routing-bundle": "^2.1"
+        "php": "^8.2",
+        "symfony/framework-bundle": "^6.3",
+        "symfony/templating": "^6.3",
+        "symfony/twig-bundle": "^6.3",
+        "symfony/validator": "^6.3",
+        "symfony-cmf/core-bundle": "dev-master",
+        "symfony-cmf/menu-bundle": "dev-master",
+        "symfony-cmf/routing-bundle": "^3.0"
     },
     "require-dev": {
-        "doctrine/phpcr-odm": "^1.4|^2.0",
-        "symfony-cmf/testing": "^2.1.11",
-        "symfony/phpunit-bridge": "^4.2.2"
+        "doctrine/phpcr-odm": "^1.7",
+        "symfony-cmf/testing": "dev-master",
+        "symfony/phpunit-bridge": "^6.3",
+        "jackalope/jackalope-jackrabbit": "^1.4"
     },
     "suggest": {
         "friendsofsymfony/rest-bundle": "Improved handling for different output formats",
@@ -46,7 +61,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.1-dev"
+            "dev-master": "3.x-dev"
         }
     }
 }
